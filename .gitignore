@@ -1,18 +1,19 @@
 *.log
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+fractureid.dev/wp-config.php
+fractureid.dev/wp-content/advanced-cache.php
+fractureid.dev/wp-content/backup-db/
+fractureid.dev/wp-content/backups/
+fractureid.dev/wp-content/blogs.dir/
+fractureid.dev/wp-content/cache/
+fractureid.dev/wp-content/upgrade/
+fractureid.dev/wp-content/uploads/
+fractureid.dev/wp-content/wp-cache-config.php
+fractureid.dev/wp-content/plugins/hello.php
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+fractureid.dev/.htaccess
+fractureid.dev/license.txt
+fractureid.dev/readme.html
+fractureid.dev/sitemap.xml
+fractureid.dev/sitemap.xml.gz
 
+.DS_Store
