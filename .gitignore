@@ -20,5 +20,9 @@ fractureid.dev/sitemap.xml.gz
 
 images
 files
+<<<<<<< HEAD
+=======
+docs
+>>>>>>> 6840e69... updated .gitignore file
 
 .DS_Store
