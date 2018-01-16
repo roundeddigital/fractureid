@@ -20,5 +20,9 @@ fractureid.dev/sitemap.xml.gz
 
 images
 files
+<<<<<<< HEAD
+=======
+docs
+>>>>>>> 74f5e5fe98bf6cf7dee86d52bb53d2f940f282e7
 
 .DS_Store
