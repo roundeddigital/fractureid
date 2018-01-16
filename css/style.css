@@ -258,6 +258,17 @@ MODAL: APPOINTMENT REQUEST
 	background: white;
   }
 
+  /* give asset inline-block style */
+  .rd-inline-block {
+      display: inline-block;
+      margin: auto!important;
+      padding-right: 100px;
+  }
+  /* adds padding to top */
+  .rd-padding-top-50 {
+      padding-top: 50px;
+  }x
+
 /*   .shift-up,
   .shift-up-120 {
     position: relative;
