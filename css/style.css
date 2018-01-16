@@ -10,6 +10,16 @@ Text Domain:  uncode-child
 
 /* Write here your own personal stylesheet */
 
+/* give asset inline-block style */
+.rd-inline-block {
+    display: inline-block;
+    margin: auto!important;
+    padding-right: 75px;
+}
+/* adds padding to top */
+.rd-padding-top-50 {
+    padding-top: 50px;
+}
 
 /* ******************** RD ***
 FOOTER: DATE HIGHLIGHT
