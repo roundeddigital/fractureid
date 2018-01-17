@@ -21,206 +21,241 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 function cptui_register_my_cpts() {
 
-	/*********************
-  	* SERVICES
-	*********************/
+	/**
+	 * Post Type: Services.
+	 */
 
-		$labels = array(
-			"name" => __( "Services", "uncode-child" ),
-			"singular_name" => __( "Service", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Services", "uncode-child" ),
+		"singular_name" => __( "Service", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Services", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "services", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-store",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
-			"taxonomies" => array( "category", "post_tag", "service_category" ),
-		);
+	$args = array(
+		"label" => __( "Services", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_menu_string" => "10",
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "services", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-store",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag" ),
+	);
 
-		register_post_type( "services", $args );
+	register_post_type( "services", $args );
 
-	/*********************
-  	* TEAM MEMBERS
-  *********************/
+	/**
+	 * Post Type: Team Members.
+	 */
 
-		$labels = array(
-			"name" => __( "Team Members", "uncode-child" ),
-			"singular_name" => __( "Team Member", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Team Members", "uncode-child" ),
+		"singular_name" => __( "Team Member", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Team Members", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "team", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-groups",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
-			"taxonomies" => array( "category", "post_tag", "team_member_category" ),
-		);
+	$args = array(
+		"label" => __( "Team Members", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "team", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-groups",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag", "team_member_category" ),
+	);
 
-		register_post_type( "team", $args );
+	register_post_type( "team", $args );
 
-	/*********************
-  	* EVENTS
-  *********************/
+	/**
+	 * Post Type: Events.
+	 */
 
-		$labels = array(
-			"name" => __( "Events", "uncode-child" ),
-			"singular_name" => __( "Event", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Events", "uncode-child" ),
+		"singular_name" => __( "Event", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Events", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "events", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-palmtree",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
-			"taxonomies" => array( "category", "post_tag", "event_category" ),
-		);
+	$args = array(
+		"label" => __( "Events", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "events", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-palmtree",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
+		"taxonomies" => array( "category", "post_tag", "event_category" ),
+	);
 
-		register_post_type( "events", $args );
+	register_post_type( "events", $args );
 
-	/*********************
-  	* PRESS WRITEUPS
-  *********************/
+	/**
+	 * Post Type: Press Writeups.
+	 */
 
-		$labels = array(
-			"name" => __( "Press Writeups", "uncode-child" ),
-			"singular_name" => __( "Press Writeup", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Press Writeups", "uncode-child" ),
+		"singular_name" => __( "Press Writeup", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Press Writeups", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "press", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-megaphone",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
-			"taxonomies" => array( "category", "post_tag", "press_category" ),
-		);
+	$args = array(
+		"label" => __( "Press Writeups", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "press", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-megaphone",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag", "press_category" ),
+	);
 
-		register_post_type( "press", $args );
+	register_post_type( "press", $args );
 
-	/*********************
-  	* CAREERS
-  *********************/
+	/**
+	 * Post Type: Careers.
+	 */
 
-		$labels = array(
-			"name" => __( "Careers", "uncode-child" ),
-			"singular_name" => __( "Career", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Careers", "uncode-child" ),
+		"singular_name" => __( "Career", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Careers", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "careers", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-businessman",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
-			"taxonomies" => array( "category", "post_tag", "career_categories" ),
-		);
+	$args = array(
+		"label" => __( "Careers", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "careers", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-businessman",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag", "career_categories" ),
+	);
 
-		register_post_type( "careers", $args );
+	register_post_type( "careers", $args );
 
-	/*********************
-  	* LOCATIONS
-  *********************/
+	/**
+	 * Post Type: Locations.
+	 */
 
-		$labels = array(
-			"name" => __( "Locations", "uncode-child" ),
-			"singular_name" => __( "Location", "uncode-child" ),
-		);
+	$labels = array(
+		"name" => __( "Locations", "uncode-child" ),
+		"singular_name" => __( "Location", "uncode-child" ),
+	);
 
-		$args = array(
-			"label" => __( "Locations", "uncode-child" ),
-			"labels" => $labels,
-			"description" => "",
-			"public" => true,
-			"publicly_queryable" => true,
-			"show_ui" => true,
-			"show_in_rest" => false,
-			"rest_base" => "",
-			"has_archive" => false,
-			"show_in_menu" => true,
-			"exclude_from_search" => false,
-			"capability_type" => "post",
-			"map_meta_cap" => true,
-			"hierarchical" => false,
-			"rewrite" => array( "slug" => "locations", "with_front" => true ),
-			"query_var" => true,
-			"menu_icon" => "dashicons-location",
-			"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
-			"taxonomies" => array( "category", "post_tag", "location_category" ),
-		);
+	$args = array(
+		"label" => __( "Locations", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "locations", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "dashicons-location",
+		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"taxonomies" => array( "category", "post_tag", "location_category" ),
+	);
 
-		register_post_type( "locations", $args );
+	register_post_type( "locations", $args );
+
+	/**
+	 * Post Type: NPV Improvements.
+	 */
+
+	$labels = array(
+		"name" => __( "NPV Improvements", "uncode-child" ),
+		"singular_name" => __( "NPV Improvement", "uncode-child" ),
+	);
+
+	$args = array(
+		"label" => __( "NPV Improvements", "uncode-child" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "solutions", "with_front" => true ),
+		"query_var" => true,
+		"menu_position" => 6,
+		"menu_icon" => "dashicons-store",
+		"supports" => array( "title", "editor", "thumbnail" ),
+	);
+
+	register_post_type( "solutions", $args );
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );
+
 
 /* ============================================================================ CUSTOM TAXONOMIES ============== */
 
