@@ -1,28 +1,24 @@
 *.log
-fractureid.dev/wp-config.php
-fractureid.dev/wp-content/advanced-cache.php
-fractureid.dev/wp-content/backup-db/
-fractureid.dev/wp-content/backups/
-fractureid.dev/wp-content/ai1wm-backups/
-fractureid.dev/wp-content/envato-backups/
-fractureid.dev/wp-content/blogs.dir/
-fractureid.dev/wp-content/cache/
-fractureid.dev/wp-content/upgrade/
-fractureid.dev/wp-content/uploads/
-fractureid.dev/wp-content/wp-cache-config.php
-fractureid.dev/wp-content/plugins/hello.php
+fractureid.local/app/public/wp-config.php
+fractureid.local/app/public/wp-content/advanced-cache.php
+fractureid.local/app/public/wp-content/backup-db/
+fractureid.local/app/public/wp-content/backups/
+fractureid.local/app/public/wp-content/ai1wm-backups/
+fractureid.local/app/public/wp-content/envato-backups/
+fractureid.local/app/public/wp-content/blogs.dir/
+fractureid.local/app/public/wp-content/cache/
+fractureid.local/app/public/wp-content/upgrade/
+fractureid.local/app/public/wp-content/uploads/
+fractureid.local/app/public/wp-content/wp-cache-config.php
+fractureid.local/app/public/wp-content/plugins/hello.php
 
-fractureid.dev/.htaccess
-fractureid.dev/license.txt
-fractureid.dev/readme.html
-fractureid.dev/sitemap.xml
-fractureid.dev/sitemap.xml.gz
+fractureid.local/app/public/.htaccess
+fractureid.local/app/public/license.txt
+fractureid.local/app/public/readme.html
+fractureid.local/app/public/sitemap.xml
+fractureid.local/app/public/sitemap.xml.gz
 
 images
 files
-<<<<<<< HEAD
-=======
-docs
->>>>>>> 6840e69... updated .gitignore file
 
 .DS_Store

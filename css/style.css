@@ -235,6 +235,11 @@ MODAL: APPOINTMENT REQUEST
   background-color: #5cb85c;
   color: white;
 }
+/* contact form 7 */
+input[type="text"]
+{
+    width: 100%!important;
+}
 
 /* ALL Mobile, everything less than an ipad vertical*/
 @media only screen and (max-width: 767px) {
