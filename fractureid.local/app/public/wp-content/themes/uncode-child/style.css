@@ -27,7 +27,8 @@ FOOTER: DATE HIGHLIGHT
 /* Text Style for day of the week highlight in footer */
 
 .today {
-  color: #F46D25!important;
+  /* #F46D25 */
+  color: #008afa!important;
   font-weight: 900!important;
   letter-spacing: .02em;
 /*   text-transform: uppercase!important; */
