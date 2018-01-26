@@ -19,4 +19,4 @@ function colorDate() {
 </script>
 <?php
 }
-?> // remove this php tag when placed in snippets plugin
+?> <!-- remove this php tag when placed in snippets plugin -->
